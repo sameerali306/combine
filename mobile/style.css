@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    background-image: url(download\ \(2\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-bottom: 40px solid black; */
+    border-radius: 5px 5px 5px solid black;
+}
+.time{
+    color: black;
+    padding: 4px;
+}
+.search {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    gap: 15px;               
+    padding: 10px;
+    background: #f1f3f4;     
+    border-radius: 30px;      
+    margin: 20px auto;      
+}
+
+.search img {
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search img:hover {
+    transform: scale(1.2);    
+}
+
+
+.app{
+    display: flex;
+    padding: 20px;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.app img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+.app img:hover{
+    transform: scale(1.2);
+}
+
+.search{
+    border-radius: 10px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+.box{
+    width: 30px;
+    border: 2px solid;
+    margin-left:100px;
+    border-radius: 5px;
+    background: white;
+}
+.box img{
+    width: 10px;
+}
+.div2 {
+    display: flex;
+    justify-content: center;          
+    align-items: center;
+    gap: 50px;                        
+    padding: 10px 0;
+    background: #111;               
+    border-radius: 15px;
+}
+
+/* Back button (triangle) */
+.div2 .side {
+    width: 0;
+    height: 0;
+    border-left: 14px solid white;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+/* Home button (circle outline) */
+.div2 .center {
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/* Recent button (square outline) */
+.div2 .back {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+}
+
+/* Hover effect for all buttons */
+.div2 div:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.icon {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 20px;                 
+    margin-top: 20px;
+}
+
+.icon a img {
+    width: 20px;              
+    height: 20px;
+    border-radius: 15px;       
+    padding: 10px;
+    background: #f1f3f4;   
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.icon a img:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
