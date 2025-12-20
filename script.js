@@ -5,15 +5,15 @@ let items = [
   { item: 4, Name: "fan", price: 10000, quantity: 6 },
   { item: 5, Name: "AC", price: 90000, quantity: 3 },
 ];
+const reduce=items.reduce((accumulator,currentValue)=>{
+    return accumulator+(currentValue.price *currentValue.quantity)
+},0)
 
-const filteredItems = items.filter((item) => {
-    if (item.price<=50000) {
-        let totalPrice = item.price * item.quantity;
-  return totalPrice <= 500000;
-    }
+console.log(reduce);
+
   
-});
 
-console.log(filteredItems);
+
+
 
 
