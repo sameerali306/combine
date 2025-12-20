@@ -1,30 +1,33 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int GussedNumber=10; 
-    int Number;
+    int GussedNumber=31;
+    int number;
     int TotalAttempt=10;
-    int UserAttempt=1;
-    while (TotalAttempt>1){
-    cout<<"enter a number :";
-    cin>>Number;
+    while (TotalAttempt>1)
+    
     {
-        if (Number==GussedNumber)
+        cout<<"Enter Your Number :";
+        cin>>number;
+        if (number==GussedNumber)
         {
-            cout<<"Cobgratulation Your Gussed is right";
+            cout<<"Congratulate 🎉👋👋👋Your Gussed is Right";
             break;
         }else{
-            cout<<"try again"<<endl;
-            TotalAttempt--;
-            cout<<"TotalAttempt is equal to :"<<TotalAttempt<<endl;
-            UserAttempt++;
-            cout<<"UserAttempt is equal to :"<<UserAttempt<<endl;
+            if (number>GussedNumber)
+            {
+                cout<<"Your number is greater than Gussed number"<<endl;
+                cout<<"Your attempy left is ="<<TotalAttempt--<<endl;
+            }else{
+                cout<<"Your number is smaller than Gussed number"<<endl;
+                cout<<"Your attempy left is ="<<TotalAttempt-- <<endl;
+            }
+            
 
         }
-        
-    }}
-
-
+        cout<<"You have no more attempt  left 😐😐😐 you guassed number is :"<<GussedNumber<<endl;
+    }
     
     
-} // namespace std
+}
+
