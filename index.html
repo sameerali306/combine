@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Kite Shape</title>
 </head>
 <body>
-    <!-- <script src="script.js"></script> -->
-     <script src="script2.js"></script>
+  <pre id="output"></pre>
+
+  <script>
+    let n = 5;
+    let output = "";
+
+    // Upper Triangle
+    for (let i = 1; i <= n; i++) {
+      output += " ".repeat(n - i);
+      output += "*".repeat(2 * i - 1);
+      output += "\n";
+    }
+
+    // Tail
+    for (let i = 1; i <= n; i++) {
+      output += " ".repeat(n - 1) + "*\n";
+    }
+
+ document.getElementById("output").textContent = output;
+  </script>
 </body>
 </html>
