@@ -1,6 +1,4 @@
-if (count/1==0 && count/count==0)
-        // {
-        //     cout<<"the number is even";
-            
+while(space<=rows-1){
+        //     cout<<" ";
+        //     space++;
         // }
-        // // 
